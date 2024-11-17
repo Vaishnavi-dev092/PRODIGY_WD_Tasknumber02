@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #282c34; /* Dark background for contrast */
+    color: #ffffff; /* Light text for visibility */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stopwatch-container {
+    background: linear-gradient(145deg, #3c3f49, #2d3038); /* Stylish gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #1d1f24, -10px -10px 20px #3f434d; /* Neumorphism */
+    text-align: center;
+    width: 320px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff9800; /* Highlight color for title */
+  }
+  
+  .timer {
+    font-size: 48px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #00e676; /* Bright green timer */
+  }
+  
+  .controls button {
+    background: linear-gradient(145deg, #4e525c, #34373f); /* Button gradient */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #22242a, -5px -5px 10px #464a54; /* Neumorphic button */
+    transition: all 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background: #ff9800; /* Highlight on hover */
+    color: #000;
+    box-shadow: none;
+  }
+  
+  #laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  #laps li {
+    background: #424657;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
